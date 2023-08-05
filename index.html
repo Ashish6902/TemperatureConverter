@@ -1,8 +1,27 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Temperature Converter</title>
-  </head>
-  <body>
-    
-  </body>
+</head>
+    <body>
+            <div class="Main_container">
+                <strong><h1>Temperature Converter</h1></strong>
+                <form>
+                    <p class="heading">Enter the value in <img id="celsius_img" src="celsius.png"></p><br>
+                    <input type="number" value="Enter The Temperature" id="input_area">
+                    <select>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                    <p id="output"></p>
+                    <p id="Formula"></p>
+                    <input type="submit" value="Convert" id="Convert">
+                    <input type="reset" value="Reset" id="Reset">
+                </form>         
+            </div>
+    <script src="index.js"></script>
+    </body>
 </html>
